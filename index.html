@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="/js/script.js" defer></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -15,6 +16,10 @@
                 <h1 class="img-logo">OpineCom.</h1>
             </a>
         </div>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" id="icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </label>
         <ul>
             <li><a href="#home" class="links">Home</a></li>
             <li><a href="#" class="links">Objetivos</a></li>
@@ -37,15 +42,14 @@
         </div>
         
         <div class="imagem-container">
-            <img src="/Image/hero-img.svg" alt="">
+            <img class="img-main" src="/Image/hero-img.svg" alt="">
         </div>
     </section>
     <section class="objetivos">
-
         <!-- Objetivo cards -->
         <div class="objetivos">
             <div class="row" data-aos="fade-right">
-                <div  class="cards">
+                <div class="cards">
                     <img class="img-cards" src="/Image/cards/megaphone.svg" alt="">
                     <h4 class="title-card">Registro de opiniões</h4>
                     <P class="text-card"> espaço para opiniões e sugestões de clientes, visando aproximação com empresas e melhoria da qualidade dos produtos e serviços.</P>

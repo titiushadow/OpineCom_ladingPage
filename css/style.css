@@ -81,6 +81,33 @@ li {
     width: 100%;
 }
 
+#icon {
+    background-color: #30BD54;
+    padding: 5px 7px 3px 7px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+#icon svg {
+    color: #FFF;
+    height: 28px;
+    transition: all .3s ease;
+}
+
+#icon:hover {
+    background: #FFF;
+}
+
+#icon:hover svg {
+    color: #30BD54;
+}
+
+#checkbox, #icon {
+    display: none;
+}
+
+/* Main section */
 .main-section {
     display: flex;
     justify-content: center;
@@ -190,3 +217,150 @@ li {
     text-align: justify;
     white-space: pre-line;
 }
+
+
+@media screen and (max-width: 480px) {
+    /* navbar */
+    nav {
+        background-color: #008374;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2; 
+    }
+    
+    .main-text {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .img-logo {
+        text-decoration: none;
+        margin-right: 10rem;
+    }
+
+    ul {
+        position: absolute;
+        width: 100%;
+        height: calc(70vh - 71px);
+        background-color: #455468;
+        left: 0;
+        border-radius: 8px;
+        top: 0;
+        text-align: center;
+        display: none;
+        margin-top: 71px;
+    }
+
+    ul li {
+        display: block;
+        padding: 10px 15px;
+    }
+
+    ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+
+    #icon {
+        display: flex;
+        margin-right: 0rem;
+    }
+
+    #checkbox:checked~ul {
+        display: block;
+    }
+
+    .links {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+
+    }
+    
+    .links:hover {
+        text-decoration: none;
+    }
+    
+    .links::after {
+        content: '';
+        display: block;
+        height: 2px;
+        background: white;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+    }
+    
+    .links:hover::after {
+        transform: scaleX(1);
+    }
+
+    /* Main section */
+    .main-section {
+        min-height: 100vh;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #008374;  
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px 0px 150px;
+        padding-top: 100px;
+    }
+
+    .p-main {
+        text-align: justify;
+    }
+
+    .img-main {
+        width: 22.5rem;
+        height: 27.9rem;
+    }
+
+
+    /* Cards objetivo */
+    .objetivos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 70px 0px;
+        height: 120vh;
+        background-color: #FEFEFE;
+        z-index: 1; 
+    }
+
+    .description-objetivos {
+        text-align: center;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
