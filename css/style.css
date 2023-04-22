@@ -24,6 +24,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1; 
 }
 
 .main-text {
@@ -36,7 +37,7 @@ nav {
 }
 
 .img-logo {
-    margin-right: 18rem;
+    margin-right: 17.5rem;
     text-decoration: none;
 }
 
@@ -70,7 +71,7 @@ li {
     display: block;
     height: 2px;
     width: 0;
-    background: white;
+    background: #F85A40;
     transition: width 0.3s ease-in-out;
     position: absolute;
     bottom: -3px;
@@ -168,6 +169,7 @@ li {
     justify-content: center;
     align-items: center;
     margin: 55px 0px 0px;
+    z-index: 0; 
 }
 
 .row {
@@ -218,6 +220,129 @@ li {
     white-space: pre-line;
 }
 
+/* Ranking das empresas */
+.ranking {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px;
+    height:  92vh;
+    background-color: #fffafa;
+}
+
+.main-title-ranking {
+    text-align: center;
+    font-size: 35px;
+    color: #4D4F51;
+}
+
+.row-ranking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 8rem;
+    padding: 50px 0px;
+}
+
+/* Ranking Good */
+.title-header-good {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0px;
+    height: 6.5rem;
+    background-color: #30BD54;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.ranking-good {
+    display: flex;
+    flex-direction: column;
+    width: 373px;
+    height: 669px;
+    background-color: transparent;
+    border: 1px solid #cacdcf;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.lojas div {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 21rem;
+    padding: 40px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.lojas h3 {
+    margin-right: 20px;
+    margin-left: 15px
+}
+
+.lojas div > span {
+    color: green;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.img-ranking-good {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+/* Ranking Bad */
+.title-header-bad {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0px;
+    height: 6.5rem;
+    background-color: #EB1728;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.ranking-bad {
+    display: flex;
+    flex-direction: column;
+    width: 373px;
+    height: 669px;
+    background-color: transparent;
+    border: 1px solid #cacdcf;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.lojas .number-bad {
+    color: red;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.infos {
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.lojas p {
+    font-size: 14px;
+}
 
 @media screen and (max-width: 480px) {
     /* navbar */
