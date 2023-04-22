@@ -71,7 +71,7 @@ li {
     display: block;
     height: 2px;
     width: 0;
-    background: #F85A40;
+    background: #FFFFFF;
     transition: width 0.3s ease-in-out;
     position: absolute;
     bottom: -3px;
@@ -168,7 +168,8 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 55px 0px 0px;
+    flex-direction: column;
+    margin: 40px 0px 0px;
     z-index: 0; 
 }
 
@@ -184,12 +185,12 @@ li {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 55px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
     background-color: #FFFFFF;
     width: 350px;
     height: 274px;
     margin: 0px 0px 30px;
-    padding: 40px;
+    padding: 20px;
     border-radius: 10px;
     transition-duration: 800ms;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -215,9 +216,8 @@ li {
 
 .text-card {
     margin-top: 0.5rem;
-    font-size: 15px;
+    font-size: 16px;
     text-align: justify;
-    white-space: pre-line;
 }
 
 /* Ranking das empresas */
@@ -225,7 +225,7 @@ li {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 30px 0px;
+    padding: 60px 0px;
     height:  92vh;
     background-color: #fffafa;
 }
@@ -255,6 +255,7 @@ li {
     height: 6.5rem;
     background-color: #30BD54;
     border-radius: 10px 10px 0px 0px;
+    opacity: 0.9;
 }
 
 .ranking-good {
@@ -288,7 +289,8 @@ li {
 
 .lojas h3 {
     margin-right: 20px;
-    margin-left: 15px
+    margin-left: 15px;
+    font-size: 16px;
 }
 
 .lojas div > span {
@@ -312,8 +314,9 @@ li {
     font-size: 20px;
     padding: 20px 0px;
     height: 6.5rem;
-    background-color: #EB1728;
+    background-color: #FE5305;
     border-radius: 10px 10px 0px 0px;
+    opacity: 0.9;
 }
 
 .ranking-bad {
