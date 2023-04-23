@@ -24,6 +24,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1; 
 }
 
 .main-text {
@@ -36,7 +37,7 @@ nav {
 }
 
 .img-logo {
-    margin-right: 18rem;
+    margin-right: 17.5rem;
     text-decoration: none;
 }
 
@@ -70,7 +71,7 @@ li {
     display: block;
     height: 2px;
     width: 0;
-    background: white;
+    background: #FFFFFF;
     transition: width 0.3s ease-in-out;
     position: absolute;
     bottom: -3px;
@@ -167,7 +168,9 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 55px 0px 0px;
+    flex-direction: column;
+    margin: 40px 0px 0px;
+    z-index: 0; 
 }
 
 .row {
@@ -182,12 +185,12 @@ li {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 55px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
     background-color: #FFFFFF;
     width: 350px;
     height: 274px;
     margin: 0px 0px 30px;
-    padding: 40px;
+    padding: 20px;
     border-radius: 10px;
     transition-duration: 800ms;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -213,11 +216,139 @@ li {
 
 .text-card {
     margin-top: 0.5rem;
-    font-size: 15px;
+    font-size: 16px;
     text-align: justify;
-    white-space: pre-line;
 }
 
+/* Ranking das empresas */
+.ranking {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 0px;
+    height:  92vh;
+    background-color: #fffafa;
+}
+
+.main-title-ranking {
+    text-align: center;
+    font-size: 35px;
+    color: #4D4F51;
+}
+
+.row-ranking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 7rem;
+    padding: 50px 0px;
+}
+
+.button {
+    display: none;
+}
+
+/* Ranking Good */
+.title-header-good {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0px;
+    height: 6.5rem;
+    background-color: #30BD54;
+    border-radius: 10px 10px 0px 0px;
+    opacity: 0.9;
+}
+
+.ranking-good {
+    display: flex;
+    flex-direction: column;
+    width: 373px;
+    height: 669px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.lojas div {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 21rem;
+    padding: 40px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.lojas h3 {
+    margin-right: 20px;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.lojas div > span {
+    color: green;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.img-ranking-good {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Ranking Bad */
+.title-header-bad {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0px;
+    height: 6.5rem;
+    background-color: #FE5305;
+    border-radius: 10px 10px 0px 0px;
+    opacity: 0.9;
+}
+
+.ranking-bad {
+    display: flex;
+    flex-direction: column;
+    width: 373px;
+    height: 669px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.lojas .number-bad {
+    color: red;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.infos {
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.lojas p {
+    font-size: 14px;
+}
 
 @media screen and (max-width: 480px) {
     /* navbar */
@@ -346,7 +477,7 @@ li {
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding: 70px 0px;
+        padding: 70px 0px 20px;
         height: 120vh;
         background-color: #FEFEFE;
         z-index: 1; 
@@ -361,6 +492,87 @@ li {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    /* Button good/bad */
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+    }
+
+    button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 17px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition-duration: 0.3s;
+    }
+
+    .good {
+        background-color: #2196F3;
+    }
+
+    .bad {
+        background-color: #f44336;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    /* Ranking good */
+    .ranking {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px 0px 0px 0px;
+        height:  92vh;
+        background-color: #fffafa;
+    }
+    
+    .main-title-ranking {
+        text-align: center;
+        font-size: 35px;
+        color: #4D4F51;
+    }
+    
+    .row-ranking {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 8rem;
+        padding: 50px 0px;
+    }
+
+    .ranking-good .hide {
+        display: flex;
+        flex-direction: column;
+        width: 373px;
+        height: 669px;
+        background-color: transparent;
+        border: 1px solid #cacdcf;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .ranking-bad .hide {
+        display: flex;
+        flex-direction: column;
+        width: 373px;
+        height: 669px;
+        background-color: transparent;
+        border: 1px solid #cacdcf;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 }
 
