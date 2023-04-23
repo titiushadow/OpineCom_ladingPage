@@ -241,8 +241,12 @@ li {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 8rem;
+    gap: 7rem;
     padding: 50px 0px;
+}
+
+.button {
+    display: none;
 }
 
 /* Ranking Good */
@@ -264,7 +268,6 @@ li {
     width: 373px;
     height: 669px;
     background-color: transparent;
-    border: 1px solid #cacdcf;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -304,6 +307,7 @@ li {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 /* Ranking Bad */
@@ -325,7 +329,6 @@ li {
     width: 373px;
     height: 669px;
     background-color: transparent;
-    border: 1px solid #cacdcf;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -474,7 +477,7 @@ li {
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding: 70px 0px;
+        padding: 70px 0px 20px;
         height: 120vh;
         background-color: #FEFEFE;
         z-index: 1; 
@@ -489,6 +492,87 @@ li {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    /* Button good/bad */
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+    }
+
+    button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 17px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition-duration: 0.3s;
+    }
+
+    .good {
+        background-color: #2196F3;
+    }
+
+    .bad {
+        background-color: #f44336;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    /* Ranking good */
+    .ranking {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px 0px 0px 0px;
+        height:  92vh;
+        background-color: #fffafa;
+    }
+    
+    .main-title-ranking {
+        text-align: center;
+        font-size: 35px;
+        color: #4D4F51;
+    }
+    
+    .row-ranking {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 8rem;
+        padding: 50px 0px;
+    }
+
+    .ranking-good .hide {
+        display: flex;
+        flex-direction: column;
+        width: 373px;
+        height: 669px;
+        background-color: transparent;
+        border: 1px solid #cacdcf;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .ranking-bad .hide {
+        display: flex;
+        flex-direction: column;
+        width: 373px;
+        height: 669px;
+        background-color: transparent;
+        border: 1px solid #cacdcf;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 }
 
