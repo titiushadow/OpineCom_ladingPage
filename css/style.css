@@ -196,6 +196,10 @@ li {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.card-invisible {
+    pointer-events: none;
+}
+
 .cards:hover {
     background-color: #FFFFFF;
     transform: scale(1.1);
@@ -355,7 +359,7 @@ li {
     display: flex;
     flex-direction: column;
     z-index: 0; 
-    height: 70vh;
+    height: 50vh;
     background-color: #FFFFFF;
 }
 
@@ -389,6 +393,7 @@ li {
     border-radius: 10px;
     transition-duration: 800ms;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 9px 32px 0px;
+    z-index: 1;
 }
 
 .img-cards-avaliacoes {
@@ -412,6 +417,7 @@ li {
 .fa-solid {
     font-size: 32px;
     cursor: pointer;
+    z-index: 2;
 }
 
 .prev {
@@ -642,5 +648,24 @@ li {
         border-radius: 10px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
+
+    /* Cards avaliações */
+    .avaliacoes-section {
+        display: flex;
+        flex-direction: column;
+        z-index: 0; 
+        height: 50vh;
+        margin-top: 385px;
+        background-color: #FFFFFF;
+    }
+    
+    .row-avaliacoes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
 }
 
