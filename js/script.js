@@ -26,8 +26,6 @@ mostrarMelhoresEmpresasBtn.addEventListener("click", function() {
     rankingGoodDiv.classList.remove("hide");
 });
 
-// Carrosel de avaliações
-
 
 
 
