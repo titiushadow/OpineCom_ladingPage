@@ -350,6 +350,74 @@ li {
     font-size: 14px;
 }
 
+/* Avaliações */
+.avaliacoes-section {
+    display: flex;
+    flex-direction: column;
+    z-index: 0; 
+    height: 70vh;
+    background-color: #FFFFFF;
+}
+
+.avaliacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0; 
+    margin: 50px 0px 0px;
+}
+
+.row-avaliacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.8rem;
+}
+
+.cards-avaliacoes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0px 0px 0px;
+    background-color: #FFFFFF;
+    width: 350px;
+    height: 274px;
+    margin: 0px 0px 30px;
+    padding: 20px;
+    border-radius: 10px;
+    transition-duration: 800ms;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 9px 32px 0px;
+}
+
+.img-cards-avaliacoes {
+    width: 180px;
+    height: 70px;
+    margin: 0px 35px 8px;
+}
+
+.title-card-avaliacoes {
+    color: #4D4F51;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-card-avaliacoes {
+    margin-top: 0.5rem;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.fa-solid {
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.prev {
+    transition: 8s ease;
+}
+
 @media screen and (max-width: 480px) {
     /* navbar */
     nav {
