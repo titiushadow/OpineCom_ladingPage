@@ -414,14 +414,26 @@ li {
     text-align: justify;
 }
 
-.fa-solid {
-    font-size: 32px;
-    cursor: pointer;
-    z-index: 2;
+/* Gatilhos mentais- section */ 
+
+.gatilhos-section {
+    display: flex;
+    flex-direction: column;
+    z-index: 0; 
+    height: 90vh;
+    background-color: #fffafa ;
 }
 
-.prev {
-    transition: 8s ease;
+.main-title-ranking {
+    text-align: center;
+    font-size: 35px;
+    color: #4D4F51;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 28px;
+    color: #455468;
 }
 
 @media screen and (max-width: 480px) {
