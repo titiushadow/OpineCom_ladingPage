@@ -26,6 +26,21 @@ mostrarMelhoresEmpresasBtn.addEventListener("click", function() {
     rankingGoodDiv.classList.remove("hide");
 });
 
+// Carrosel de imagens 
+const left = document.querySelector("#arrow-left");
+const right = document.querySelector("#arrow-right");
+const hide = document.querySelector(".hide-card");
+
+left.addEventListener("click", function() {
+  if (hide) {
+    hide.style.display = 'none';
+  }
+});
+
+right.addEventListener("click", function() {
+
+})
+
 
 
 

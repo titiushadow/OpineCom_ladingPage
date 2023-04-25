@@ -436,6 +436,73 @@ li {
     color: #455468;
 }
 
+.gatilhos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0; 
+    margin: 50px 0px 0px;
+}
+
+.row-gatilhos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.8rem;
+}
+
+.text-side-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    margin-right: 6rem;
+    margin-left: 3rem;
+}
+
+.h2-text-left {
+    color: #212121;
+    font-weight: 900;
+    font-size: 38px;
+    word-break: break-word;
+}
+
+.img-text-left {
+    width: 216px;
+    height: 40px;
+    margin-bottom: 1.5rem;
+    margin-right: 6rem;
+}
+
+.cards-gatilhos {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    background-color: #FFFFFF;
+    outline: 1px solid #e5e5dd ;
+    width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+    transition-duration: 800ms;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 9px 32px 0px;
+    z-index: 1;
+}
+
+.img-slide {
+    height: 100%;
+    width: 55%;
+    object-fit: cover;
+}
+
+.fa-sharp {
+    font-size: 42px;
+    cursor: pointer;
+}
+
+
 @media screen and (max-width: 480px) {
     /* navbar */
     nav {
