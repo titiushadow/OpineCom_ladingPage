@@ -27,34 +27,34 @@ mostrarMelhoresEmpresasBtn.addEventListener("click", function() {
 });
 
 // Carrosel de imagens 
-const carousel = document.querySelector('.carousel');
-const carouselItems = document.querySelectorAll('.carousel-item');
-const leftArrow = document.querySelector('#arrow-left');
-const rightArrow = document.querySelector('#arrow-right');
+// const carousel = document.querySelector('.carousel');
+// const carouselItems = document.querySelectorAll('.carousel-item');
+// const leftArrow = document.querySelector('#arrow-left');
+// const rightArrow = document.querySelector('#arrow-right');
 
-let currentSlide = 0;
+// let currentSlide = 0;
 
-function showSlide(index) {
-  carouselItems[currentSlide].style.display = 'none';
-  carouselItems[index].style.display = 'block';
-  currentSlide = index;
-}
+// function showSlide(index) {
+//   carouselItems[currentSlide].style.display = 'none';
+//   carouselItems[index].style.display = 'block';
+//   currentSlide = index;
+// }
 
-leftArrow.addEventListener('click', function() {
-  let index = currentSlide - 1;
-  if (index < 0) {
-    index = carouselItems.length - 1;
-  }
-  showSlide(index);
-});
+// leftArrow.addEventListener('click', function() {
+//   let index = currentSlide - 1;
+//   if (index < 0) {
+//     index = carouselItems.length - 1;
+//   }
+//   showSlide(index);
+// });
 
-rightArrow.addEventListener('click', function() {
-  let index = currentSlide + 1;
-  if (index >= carouselItems.length) {
-    index = 0;
-  }
-  showSlide(index);
-});
+// rightArrow.addEventListener('click', function() {
+//   let index = currentSlide + 1;
+//   if (index >= carouselItems.length) {
+//     index = 0;
+//   }
+//   showSlide(index);
+// });
 
 
 
