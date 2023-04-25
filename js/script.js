@@ -27,19 +27,34 @@ mostrarMelhoresEmpresasBtn.addEventListener("click", function() {
 });
 
 // Carrosel de imagens 
-const left = document.querySelector("#arrow-left");
-const right = document.querySelector("#arrow-right");
-const hide = document.querySelector(".hide-card");
+const carousel = document.querySelector('.carousel');
+const carouselItems = document.querySelectorAll('.carousel-item');
+const leftArrow = document.querySelector('#arrow-left');
+const rightArrow = document.querySelector('#arrow-right');
 
-left.addEventListener("click", function() {
-  if (hide) {
-    hide.style.display = 'none';
+let currentSlide = 0;
+
+function showSlide(index) {
+  carouselItems[currentSlide].style.display = 'none';
+  carouselItems[index].style.display = 'block';
+  currentSlide = index;
+}
+
+leftArrow.addEventListener('click', function() {
+  let index = currentSlide - 1;
+  if (index < 0) {
+    index = carouselItems.length - 1;
   }
+  showSlide(index);
 });
 
-right.addEventListener("click", function() {
-
-})
+rightArrow.addEventListener('click', function() {
+  let index = currentSlide + 1;
+  if (index >= carouselItems.length) {
+    index = 0;
+  }
+  showSlide(index);
+});
 
 
 

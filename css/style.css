@@ -502,6 +502,9 @@ li {
     cursor: pointer;
 }
 
+.carousel-item:not(:first-child) {
+    display: none;
+}
 
 @media screen and (max-width: 480px) {
     /* navbar */
