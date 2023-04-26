@@ -196,6 +196,10 @@ li {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.card-invisible {
+    pointer-events: none;
+}
+
 .cards:hover {
     background-color: #FFFFFF;
     transform: scale(1.1);
@@ -350,6 +354,178 @@ li {
     font-size: 14px;
 }
 
+/* Avaliações */
+.avaliacoes-section {
+    display: flex;
+    flex-direction: column;
+    z-index: 0; 
+    height: 50vh;
+    background-color: #FFFFFF;
+}
+
+.avaliacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0; 
+    margin: 50px 0px 0px;
+}
+
+.row-avaliacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.8rem;
+}
+
+.cards-avaliacoes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 380px;
+    height: 310px;
+    margin: 0px 0px 30px;
+    padding: 20px;
+    border-radius: 10px;
+    transition-duration: 800ms;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 9px 32px 0px;
+    z-index: 1;
+}
+
+.img-people {
+    border-radius: 50%;
+    margin: 0px 0px 10px;
+}
+
+.img-cards-avaliacoes {
+    width: 180px;
+    height: 70px;
+    margin: 0px 35px 8px;
+}
+
+.title-card-avaliacoes {
+    color: #4D4F51;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.text-card-avaliacoes {
+    margin-top: 0.5rem;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Gatilhos mentais- section */ 
+
+.gatilhos-section {
+    display: flex;
+    flex-direction: column;
+    z-index: 0; 
+    height: 90vh;
+    background-color: #fffafa ;
+}
+
+.main-title-ranking {
+    text-align: center;
+    font-size: 35px;
+    color: #4D4F51;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 28px;
+    color: #455468;
+}
+
+.gatilhos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0; 
+    margin: 50px 0px 0px;
+}
+
+.row-gatilhos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.8rem;
+}
+
+.text-side-right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 6rem;
+    margin-left: 2rem;
+    margin-right: 0rem;
+}
+
+.h2-text-right {
+    color: #212121;
+    font-weight: 900;
+    font-size: 38px;
+    word-break: break-word;
+    /* text-align: justify; */
+}
+
+.img-text-right {
+    width: 216px;
+    height: 40px;
+    margin-bottom: 1.5rem;
+    margin-left: 4.3rem;
+}
+
+.text-footer-cards {
+    margin-top: 13px;
+    font-size: 18px;
+}
+
+.cards-gatilhos {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    background-color: #FFFFFF;
+    outline: 1px solid #e5e5dd;
+    width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+    transition-duration: 800ms;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 9px 32px 0px;
+    z-index: 1;
+}
+
+.img-slide {
+    height: 100%;
+    width: 55%;
+    object-fit: cover;
+    float: right;
+    margin-left: 1.5rem;
+}
+
+.fa-sharp {
+    font-size: 42px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 700ms ease-in-out;
+}
+
+.fa-sharp:hover {
+    opacity: 1;
+    transition: 700ms ease-in-out;
+}
+
+.cards-gatilhos:not(:first-child) {
+    display: none;
+}
+
 @media screen and (max-width: 480px) {
     /* navbar */
     nav {
@@ -471,7 +647,6 @@ li {
         height: 27.9rem;
     }
 
-
     /* Cards objetivo */
     .objetivos{
         display: flex;
@@ -574,5 +749,24 @@ li {
         border-radius: 10px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
+
+    /* Cards avaliações */
+    .avaliacoes-section {
+        display: flex;
+        flex-direction: column;
+        z-index: 0; 
+        height: 50vh;
+        margin-top: 385px;
+        background-color: #FFFFFF;
+    }
+    
+    .row-avaliacoes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
 }
 
