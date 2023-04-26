@@ -527,7 +527,6 @@ li {
 }
 
 /* Footer */
-/* Footer */
 footer {
     display: flex;
     align-items: center;
@@ -783,6 +782,27 @@ footer {
         flex-direction: column;
     }
 
+    .gatilhos-section {
+        display: none;
+    }
+    .cards-gatilhos {
+        display: none;
+    }
+    /* Footer */
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 3rem;
+        position: fixed;
+        background-color: #008374;
+        z-index: 1;
+        bottom: 0;
+        width: 100%;    
+    }
 
+    .copyright-footer {
+        color: #FFFFFF;
+    }
 }
 
