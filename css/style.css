@@ -526,6 +526,22 @@ li {
     display: none;
 }
 
+/* Footer */
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3rem;
+    background-color: #008374;
+    bottom: 0;
+    width: 100%;    
+}
+
+.copyright-footer {
+    color: #FFFFFF;
+}
+
 @media screen and (max-width: 480px) {
     /* navbar */
     nav {
