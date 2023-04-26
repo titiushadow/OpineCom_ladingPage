@@ -384,16 +384,20 @@ li {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 40px 0px 0px 0px;
     background-color: #FFFFFF;
-    width: 350px;
-    height: 274px;
+    width: 380px;
+    height: 310px;
     margin: 0px 0px 30px;
     padding: 20px;
     border-radius: 10px;
     transition-duration: 800ms;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 9px 32px 0px;
     z-index: 1;
+}
+
+.img-people {
+    border-radius: 50%;
+    margin: 0px 0px 10px;
 }
 
 .img-cards-avaliacoes {
@@ -406,12 +410,13 @@ li {
     color: #4D4F51;
     font-size: 21px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
 }
 
 .text-card-avaliacoes {
     margin-top: 0.5rem;
-    font-size: 16px;
-    text-align: justify;
+    font-size: 15px;
+    text-align: center;
 }
 
 /* Gatilhos mentais- section */ 
@@ -453,28 +458,34 @@ li {
     gap: 1.8rem;
 }
 
-.text-side-left {
+.text-side-right {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    margin-bottom: 3rem;
-    margin-right: 6rem;
-    margin-left: 3rem;
+    margin-top: 6rem;
+    margin-left: 2rem;
+    margin-right: 0rem;
 }
 
-.h2-text-left {
+.h2-text-right {
     color: #212121;
     font-weight: 900;
     font-size: 38px;
     word-break: break-word;
+    /* text-align: justify; */
 }
 
-.img-text-left {
+.img-text-right {
     width: 216px;
     height: 40px;
     margin-bottom: 1.5rem;
-    margin-right: 6rem;
+    margin-left: 4.3rem;
+}
+
+.text-footer-cards {
+    margin-top: 13px;
+    font-size: 18px;
 }
 
 .cards-gatilhos {
@@ -482,7 +493,7 @@ li {
     justify-content: end;
     align-items: end;
     background-color: #FFFFFF;
-    outline: 1px solid #e5e5dd ;
+    outline: 1px solid #e5e5dd;
     width: 1000px;
     height: 500px;
     border-radius: 10px;
@@ -495,14 +506,23 @@ li {
     height: 100%;
     width: 55%;
     object-fit: cover;
+    float: right;
+    margin-left: 1.5rem;
 }
 
 .fa-sharp {
     font-size: 42px;
     cursor: pointer;
+    opacity: 0.5;
+    transition: 700ms ease-in-out;
 }
 
-.carousel-item:not(:first-child) {
+.fa-sharp:hover {
+    opacity: 1;
+    transition: 700ms ease-in-out;
+}
+
+.cards-gatilhos:not(:first-child) {
     display: none;
 }
 
@@ -626,7 +646,6 @@ li {
         width: 22.5rem;
         height: 27.9rem;
     }
-
 
     /* Cards objetivo */
     .objetivos{
