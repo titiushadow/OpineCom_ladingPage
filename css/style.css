@@ -541,6 +541,87 @@ footer {
     color: #FFFFFF;
 }
 
+@media screen and (max-width: 1366px) {
+    .main-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 83vh;
+        width: auto;
+        background-color: #008374;
+    }
+
+    .ranking {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 60px 0px;
+        height: 130vh;
+        background-color: #fffafa;
+    }
+
+    .row-avaliacoes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 1.8rem;
+        width: 80rem;
+    }
+
+    .cards-avaliacoes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        width: 380px;
+        height: 350px;
+        margin: 0px 0px 30px;
+        padding: 20px;
+        border-radius: 10px;
+        transition-duration: 800ms;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 9px 32px 0px;
+        z-index: 1;
+    }
+
+    .avaliacoes-section {
+        display: flex;
+        flex-direction: column;
+        z-index: 0; 
+        height: 70vh;
+        background-color: #FFFFFF;
+    }
+
+    .gatilhos-section {
+        display: flex;
+        flex-direction: column;
+        z-index: 0; 
+        height: 105vh;
+        margin-top: 2rem;
+        background-color: #fffafa ;
+    }
+
+    .gatilhos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 0; 
+    }
+
+    .title-gatilho {
+        margin-top: 1rem;
+    }
+
+    .row-gatilhos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 1.8rem;
+    }
+}
+
 @media screen and (max-width: 480px) {
     /* navbar */
     nav {
