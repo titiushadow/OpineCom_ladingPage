@@ -425,7 +425,7 @@ li {
     display: flex;
     flex-direction: column;
     z-index: 0; 
-    height: 90vh;
+    height: 75vh;
     background-color: #fffafa ;
 }
 
