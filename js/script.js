@@ -26,6 +26,7 @@ mostrarMelhoresEmpresasBtn.addEventListener("click", function() {
     rankingGoodDiv.classList.remove("hide");
 });
 
+// Carrosel de imagens
 const carousel = document.querySelector('.carousel');
 const carouselItems = document.querySelectorAll('.cards-gatilhos');
 const leftArrow = document.querySelector('#arrow-left');
