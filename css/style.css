@@ -556,7 +556,7 @@ footer {
         align-items: center;
         flex-direction: column;
         padding: 60px 0px;
-        height: 130vh;
+        height: 140vh;
         background-color: #fffafa;
     }
 
@@ -588,7 +588,7 @@ footer {
         display: flex;
         flex-direction: column;
         z-index: 0; 
-        height: 70vh;
+        height: 80vh;
         background-color: #FFFFFF;
     }
 
@@ -596,7 +596,7 @@ footer {
         display: flex;
         flex-direction: column;
         z-index: 0; 
-        height: 105vh;
+        height: 115vh;
         margin-top: 2rem;
         background-color: #fffafa ;
     }
